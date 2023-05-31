@@ -1,16 +1,11 @@
-/* Description: Master CSS file */
-
 /*****************************************
 Table Of Contents:
 - General Styles
 - Navigation
 - Home
-- Information
 - Button
-- Services
 - Menu
-- Testimonials
-- Newsletter
+- Testimonials / Customer Feedbacks
 - Back To Top Button
 - Extra Pages
 - Media Queries
@@ -65,7 +60,6 @@ li {
 /* Section Background */
 .home,
 .about,
-.services,
 .menu,
 .work,
 .contact {
@@ -73,7 +67,6 @@ li {
 	position: relative;
 }
 
-.services,
 .work,
 .contact,
 .testimonial,
@@ -83,8 +76,6 @@ li {
 
 .about,
 .menu,
-.company,
-.newsletter,
 .location {
   	background-color: var(--primary-light);
 }
@@ -100,9 +91,7 @@ li {
 .home_text,
 .home .fas,
 .menu .far,
-.information .fas,
 .work .fas,
-.services .fas,
 .location .far,
 .location .fas {
 	padding: 15px 0;
@@ -278,23 +267,6 @@ li {
   	opacity: 0.7;
 }
 
-
-/***********************/
-/*     Information     */
-/***********************/
-.information .container-fluid .row div:first-child {
-  	background-color: var(--primary);
-}
-
-.information .container-fluid .row div:last-child {
-  	background-color: white;
-}
-
-.information .container-fluid .row div:nth-child(2) {
-  	background-color: var(--primary-light);
-}
-
-
 /******************/
 /*     Button     */
 /******************/
@@ -318,7 +290,7 @@ li {
 	transform: translate(5px, 5px);
 }
 
-/* Email - Newsletter Button */
+/* Email -  Button */
 .btn-secondary {
 	color: black;
 	border-width: 2px;
@@ -355,26 +327,6 @@ li {
 	padding: 10px 30px;
 	transform: translate(5px, 5px);
 }
-
-
-/********************/
-/*     Services     */
-/********************/
-.services .card {
-	padding: 20px;
-	border-radius: 0;
-	border: 2px solid white;
-}
-
-.services .card:hover {
-	border: 10px solid;
-	transform: scale(1.01);
-	border-image-slice: 1;
-	border-width: 2px;
-	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px #C23B23;
-}
-
 
 /*****************/
 /*     Menu     */
@@ -500,23 +452,6 @@ li {
 	}
 }
 
-
-/**********************/
-/*     Newsletter     */
-/**********************/
-.form-control-input,
-.form-control-textarea {
-	width: 100%;
-	appearance: none;
-	border-radius: 4px;
-	font-size: 0.875rem;
-	line-height: 1.5rem;
-	padding-left: 1.5rem;
-	padding-top: 0.775rem;
-	padding-bottom: 0.775rem;
-}
-
-
 /******************************/
 /*     Back To Top Button     */
 /******************************/
@@ -608,7 +543,6 @@ li {
 /*     Media Queries     */
 /*************************/
 @media only screen and (max-width: 1024px) {
-	.services,
 	.work,
 	.testimonial,
 	.about,
